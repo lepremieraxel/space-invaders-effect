@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Mur
-  - Invader
-  - GameOver
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -14,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Sol
-  - Invaders
-  - UFO window
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -41,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: UI
-    uniqueID: 3395639295
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
