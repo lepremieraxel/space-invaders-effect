@@ -16156,12 +16156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6bbd0c1991c5b438bf426eb84b9462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invaderPrefab: {fileID: 0}
   levelFile: Assets/Scripts/Level.csv
-  invaderTemplate: {fileID: 6208638380393502857, guid: b4b36a63283193a4f98749e1d0038602,
-    type: 3}
-  currentScore: 0
-  enemyAlive: 0
-  stoppedCoroutine: 0
 --- !u!4 &455581643
 Transform:
   m_ObjectHideFlags: 0
@@ -16664,6 +16660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdb6eb1a8d850b4c870fe67ea11a74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelManager: {fileID: 0}
+  startButton: {fileID: 0}
+  levelContainer: {fileID: 0}
 --- !u!1 &527450612
 GameObject:
   m_ObjectHideFlags: 0
@@ -23239,6 +23239,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdb6eb1a8d850b4c870fe67ea11a74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelManager: {fileID: 0}
+  startButton: {fileID: 0}
+  levelContainer: {fileID: 0}
 --- !u!114 &762461094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29656,6 +29660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdb6eb1a8d850b4c870fe67ea11a74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelManager: {fileID: 0}
+  startButton: {fileID: 0}
+  levelContainer: {fileID: 0}
 --- !u!4 &1275327761
 Transform:
   m_ObjectHideFlags: 0
@@ -31927,16 +31935,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eae1a33dc891e243bc223aebc95739c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invadersMeshes:
-  - {fileID: -4766025223964007086, guid: 1f66a0c6c43cbe34c9cdc2e13b1a97c5, type: 3}
-  - {fileID: -8959622990122275933, guid: 68b76751b5dfb5a4eaf9bcea155265a9, type: 3}
-  - {fileID: -4575796847199383874, guid: 711bfca50848a6547873e2cabd490f0f, type: 3}
-  - {fileID: 1923189710245073178, guid: ced5a937b099bcf4ba06a96cc33e8b46, type: 3}
-  invadersMaterials:
-  - {fileID: 2100000, guid: 783938a4798fda840a8f9494dd8ecca1, type: 2}
-  - {fileID: 2100000, guid: 880b3ba6847fa794bb2271104575de6c, type: 2}
-  - {fileID: 2100000, guid: b50e23468f982b24a8d1eaab08d6f126, type: 2}
-  - {fileID: 2100000, guid: d90e7cf4f0610ad43b650d38df1563f7, type: 2}
+  type: 
+  hp: 0
+  damage: 0
 --- !u!4 &1902192586
 Transform:
   m_ObjectHideFlags: 0
@@ -32513,6 +32514,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdb6eb1a8d850b4c870fe67ea11a74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelManager: {fileID: 0}
+  startButton: {fileID: 0}
+  levelContainer: {fileID: 0}
 --- !u!114 &1979554652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32690,50 +32695,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012426798}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2039003087
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2039003090}
-  - component: {fileID: 2039003089}
-  m_Layer: 0
-  m_Name: GunManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2039003089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039003087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c48300819a0b148b583a1a869663a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2039003090
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039003087}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.27088886, y: -9.41022, z: 19.354567}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059429751
 GameObject:
   m_ObjectHideFlags: 0
@@ -38059,7 +38020,6 @@ SceneRoots:
   - {fileID: 93341896}
   - {fileID: 1275327761}
   - {fileID: 455581643}
-  - {fileID: 2039003090}
   - {fileID: 1902192586}
   - {fileID: 1291058396}
   - {fileID: 804737342}
